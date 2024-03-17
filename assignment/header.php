@@ -1,21 +1,15 @@
-<html>
-
-<!DOCTYPE html>
-
 <head>
-<style>
-#logo {height: 50px; width: 50px;}
-#user {height:50px;width:50px;position: absolute;right:20px;}
-#cart {height:50px;width:50px;position: absolute;right:80px;}	
-</style>
+	<link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
 <header>
 	<nav>
-		<a href="/assignment">
+		<a href="assignment">
 			<img id = "logo" src="image/logo.png">
 		</a>
+
+		<img id="companyName" src="image/name.png";>
 
 		<a>
 			<img id = "user" src="image/user.png">
