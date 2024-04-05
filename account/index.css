@@ -15,7 +15,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 13%;
+    height: 65px;
+    padding: 25px 5%;
     background: url(../image/headerBackground.jpg);
     background-size: cover;
     background-position: center;
@@ -23,6 +24,18 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    line-height: 60px;
+}
+
+.navigation.left {
+    display: flex;
+    align-items: center;
+}
+
+.navigation.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .navigation a{
@@ -33,7 +46,19 @@ body {
     text-decoration: none;
 }
 
-.navigation a::after {
+.navigation img {
+    width: 70px;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.navigation i {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.navigation.left a:not(:first-of-type)::after {
     content: "";
     position: absolute;
     left: 0;
@@ -47,7 +72,7 @@ body {
     transition: .5s ease;
 }
 
-.navigation a:hover::after {
+.navigation.left a:not(:first-of-type):hover::after {
     transform: translateY(0);
     opacity: 1;
 }
@@ -86,11 +111,11 @@ body {
 }
 
 .item .logo img {
-    width: 60px;
-    height: 60px;
-    vertical-align: middle;
+    width: 70px;
+    height: 50px;
     margin-right: -10px;
     margin-left: -15px;
+    margin-bottom: -10px;
 }
 
 .text-item h2 {

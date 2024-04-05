@@ -23,7 +23,6 @@
 
         $errors = [];
 
-        
             if (empty($userName)) 
             {
                 $errors['userName'] = '*Please enter your Username';
@@ -34,8 +33,6 @@
                 $errors['password'] = '*Please enter your password';
             }
         
-        if (isset($_POST['register']))    
-        {
             if (empty($newUserName))
             {
                 $errors['newUserName'] = '*Please create a Username for your account';
@@ -47,7 +44,7 @@
             }
             else if (!filter_var($email, FILTER_VALIDATE_EMAIL))
             {
-                $errors['emaiil'] = 'Please enter a valid email';
+                $errors['email'] = 'Please enter a valid email';
             }
 
             if (empty($newPassword))
@@ -63,7 +60,6 @@
             {
                 $errors['confirmPassword'] = 'Passwords do not match';
             }
-        
             if (empty($errors))
             {
                 echo '<div id = "container" id = "container">';
@@ -76,7 +72,6 @@
             {
                 include ('account.php');
             }
-        }
     } 
     else
     {
