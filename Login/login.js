@@ -1,19 +1,16 @@
-const container = document.querySelector('#container');
-const LoginButton = document.querySelector('#Login');
-const SignUpButton = document.querySelector('#SignUp');
+let form = document.getElementById("userSignUp");
 
-SignUpButton.addEventListener('click',() => container.classList.add('right-panel-active'))
-LoginButton.addEventListener('click',() => container.classList.remove('right-panel-active'))
+function checkPassword(event)
+{
+	let thePassword = document.getElementById("password").value;
+	let theConfirmPassword = document.getElementById("confirmPassword").value;
 
-function validatePasswordIsMatch() {
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirmPassword").value;
-
-    if (password !== confirmPassword)
-    {
-        alert("Passwords do not match");
-        return false;
-    }
-
-    return true;
+	if (thePassword !== theConfirmPassword)
+	{
+		event.preventDefault();
+		window.alert("password not same!!!");
+	}
 }
+
+form.addEventListener("submit",checkPassword);
+
