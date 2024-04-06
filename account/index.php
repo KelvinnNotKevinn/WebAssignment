@@ -85,6 +85,21 @@
             else
             {
                 include ('account.php');
+                echo "<script>";
+                echo "const loginsec = document.querySelector('.login-section');";
+                echo "const signupButton = document.querySelector('.btn.register');";
+                echo "if (!loginsec.classList.contains('active')) {";
+                echo "    loginsec.classList.add('active');";
+                echo "}";
+                echo "const loginlink = document.querySelector('.login-link');";
+                echo "const registerlink = document.querySelector('.register-link');";
+                echo "registerlink.addEventListener('click', ()=>{";
+                echo "    loginsec.classList.add('active');";
+                echo "});";
+                echo "loginlink.addEventListener('click', ()=>{";
+                echo "    loginsec.classList.remove('active')";
+                echo "});";
+                echo "</script>";
             }
         } 
     } 
