@@ -29,8 +29,7 @@
                         <div id="passwordError" class="error"><?= $errors['password'] ?? '' ?></div>
                     </div>
                     <div class = "checkbox">
-                        <label for = ""><input type = "checkbox">Remember Me</label>
-                        <a href = "#">Forgot Password</a>
+                        <a href = "#">Forgot Password?</a>
                     </div>
                     <input class = "btn login" name = "login" type = "submit" value = "Login">
                     <div class = "create-account" id = "create-account">
@@ -66,7 +65,8 @@
                         <div id="confirmPasswordError" class="error"><?= $errors['confirmPassword'] ?? '' ?></div>
                     </div>
                     <div class = "checkbox">
-                        <label for = ""><input type = "checkbox">I agree with that.</label>
+                        <label for = ""><input id = "agree" name = "agree" type = "checkbox">I agree with that.</label><br>
+                        <div id="agreeError" class = "error agreeError"><?= $errors['agree'] ?? '' ?></div>
                     </div>
                     <input class = "btn register" name = "register" type = "submit" value = "Sign Up">
                     <div class = "create-account" id = "create-account">

@@ -20,6 +20,7 @@
         $email = $_POST['email'] ?? '';
         $newPassword = $_POST['newPassword'] ?? '';
         $confirmPassword = $_POST['confirmPassword'] ?? '';
+        $agree = $_POST['agree'] ?? '';
 
         $errors = [];
 
@@ -27,21 +28,20 @@
         {
             if (empty($userName)) 
             {
-                $errors['userName'] = '*Please enter your Username';
+                $errors['userName'] = '*Invalid username';
             }
 
             if (empty($password))
             {
                 $errors['password'] = '*Please enter your password';
             }
+
+            include ('login.php');
             
             if (empty($errors))
             {
-                echo '<div id = "container" id = "container">';
-                echo "<h2>Create User Successful</h2>";
-                echo "UserName: " . htmlspecialchars($userName) . "<br>";
-                echo '';
-                echo "</div>";
+                header("Location: ../includes/header.php");
+                exit;
             }
             else
             {
@@ -61,21 +61,26 @@
             }
             else if (!filter_var($email, FILTER_VALIDATE_EMAIL))
             {
-                $errors['email'] = 'Please enter a valid email';
+                $errors['email'] = '*Please enter a valid email';
             }
 
             if (empty($newPassword))
             {
-                $errors['newPassword'] = 'Please create a new password for your account';
+                $errors['newPassword'] = '*Please create a password for your account';
             }
 
             if (empty($confirmPassword))
             {
-                $errors['confirmPassword'] = 'Please enter the password again';
+                $errors['confirmPassword'] = '*Please enter the password again';
             }
             else if ($confirmPassword != $newPassword)
             {
-                $errors['confirmPassword'] = 'Passwords do not match';
+                $errors['confirmPassword'] = '*Passwords do not match';
+            }
+
+            if (empty($agree))
+            {
+                $errors['agree'] = '*An agree is required';
             }
 
             if (empty($errors))
