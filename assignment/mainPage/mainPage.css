@@ -7,7 +7,7 @@ body
 {
 	width: 100%;
 	height: 80%;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assignment/image/background_1.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/background_1.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	box-shadow: 0 0 50px 50px black inset;
@@ -16,12 +16,11 @@ body
 
 #firstSection p#companyName
 {
-	font-size: 80px;
+	font:bold 50px "Georgia", serif;
 	text-align: center;
 	padding-top: 20vh;
 	margin-bottom: 0;
 	color: white;
-	font-family: "Georgia", serif;
 }
 
 #section2Logo
@@ -36,7 +35,7 @@ body
 .customizePCContainer
 {
 	margin:auto;
-	max-width:50%; 
+	max-width:40%; 
 	position: relative;
 }
 
@@ -91,4 +90,21 @@ body
 {
 	from {opacity: .4}
 	to {opacity: 1}
+}
+
+.sectionTitle
+{
+	background-color:#a37cf0;
+	
+	width: 20%;
+	position:relative;
+	left:100px;
+	padding:10px 10px;
+	font: 40px "Roboto",sans serif;
+	color: white;
+	text-decoration: underline;
+	text-align:center;
+	
+	border: 5px solid white;
+	border-radius: 20px;
 }

@@ -13,22 +13,29 @@
 	<section id="firstSection">
 	<div>
 		<p id="companyName">KNOW YOUR BEST BUILD<p>
-		<img src="/assignment/image/logo-white.png" id="section2Logo">
+		<img src="/Images/logo-white.png" id="section2Logo">
 		<!-- <a href="#" id="section2Link"> About Us </a> -->
 	</div>
 	</section>
 	
-	<section>
+	<section id="secondSection">
+	<div id="sectionTitleContainer">
+		<h1 class="sectionTitle">CUSTOMIZE PC</h1>
+	</div>
 	<!-- Slideshow container -->
 	<div class="customizePCContainer">
 
 		<!-- Full-width images with number and caption text -->
 		<div class="showing customizePC fade">
-			<img src="/assignment/image/logo-white.png" style="width:100%">
+			<img src="/Images/white.jpg" style="width:100%">
 		</div>
 		
 		<div class="customizePC fade">
-			<img src="/assignment/image/logo.png" style="width:100%">
+			<img src="/Images/pink.jpg" style="width:100%">
+		</div>
+		
+		<div class="customizePC fade">
+			<img src="/Images/black.jpg" style="width:100%">
 		</div>
 		 
 		<!-- Next and previous buttons -->
