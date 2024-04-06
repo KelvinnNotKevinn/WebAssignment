@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    
+    <?php
+    include('../includes/header.php')
     <form action="confirmation.php" method="POST">
         <div>
             <label for =""> 1. Motherboard </label><br>
@@ -49,6 +50,7 @@
             <button type="submit" name="confirmation" >CUSTOMIZE!</button>
         </div>   
     </form>
+    ?>
 </body>
 
 </html>
