@@ -32,14 +32,14 @@
                         <label for = ""><input type = "checkbox">Remember Me</label>
                         <a href = "#">Forgot Password</a>
                     </div>
-                    <button class = "btn" name = "login">Login</button>
+                    <input class = "btn login" name = "login" type = "submit" value = "Login">
                     <div class = "create-account" id = "create-account">
                         <p>Create A New Account? <a href = "#" class = "register-link">Sign Up</a></p>
                     </div>
                 </form>
             </div>
             <div class = "form-box register" id = "form-box register">
-                <form action = "createUser.php" method = "post">
+                <form id = "registerForm" action = "index.php" method = "post">
                     <h2>Sign Up</h2>
                     <div class = "input-box" id = "input-box">
                         <span class = "icon" id = "icon"><i class='bx bxs-user'></i></span>
@@ -68,7 +68,7 @@
                     <div class = "checkbox">
                         <label for = ""><input type = "checkbox">I agree with that.</label>
                     </div>
-                    <button class = "btn" name = "register" type = "submit">Sign Up</button>
+                    <input class = "btn register" name = "register" type = "submit" value = "Sign Up">
                     <div class = "create-account" id = "create-account">
                         <p>Already Have An Account? <a href = "#" class = "login-link">Login</a></p>
                     </div>

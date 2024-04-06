@@ -23,6 +23,8 @@
 
         $errors = [];
 
+        if (isset($_POST['login']))
+        {
             if (empty($userName)) 
             {
                 $errors['userName'] = '*Please enter your Username';
@@ -32,7 +34,22 @@
             {
                 $errors['password'] = '*Please enter your password';
             }
-        
+            
+            if (empty($errors))
+            {
+                echo '<div id = "container" id = "container">';
+                echo "<h2>Create User Successful</h2>";
+                echo "UserName: " . htmlspecialchars($userName) . "<br>";
+                echo '';
+                echo "</div>";
+            }
+            else
+            {
+                include ('account.php');
+            }
+        }
+        else if (isset($_POST['register']))
+        {
             if (empty($newUserName))
             {
                 $errors['newUserName'] = '*Please create a Username for your account';
@@ -60,18 +77,16 @@
             {
                 $errors['confirmPassword'] = 'Passwords do not match';
             }
+
             if (empty($errors))
             {
-                echo '<div id = "container" id = "container">';
-                echo "<h2>Create User Successful</h2>";
-                echo "UserName: " . htmlspecialchars($userName) . "<br>";
-                echo '';
-                echo "</div>";
+                include ('createUser.php');
             }
             else
             {
                 include ('account.php');
             }
+        } 
     } 
     else
     {
