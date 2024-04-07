@@ -19,8 +19,8 @@
 	</section>
 	
 	<section id="secondSection">
-	<div id="sectionTitleContainer">
-		<h1 class="sectionTitle">CUSTOMIZE PC</h1>
+	<div>
+		<h2 class="sectionTitle">CUSTOMIZE PC</h2>
 	</div>
 	<!-- Slideshow container -->
 	<div class="customizePCContainer">
@@ -43,6 +43,20 @@
 		<a class="next" onclick="plusPC(1)">&#10095;</a>
 	
 	</div>
+	
+	<div id="linkTo">
+		<a href="#">
+			<p>BUILD NOW!!!</p>
+		</a>
+	</div>
+	
+	</section>
+	
+	<section id="thirdSection">
+	<div>
+		<h2 class="longSectionTitle">HOT SELLING</h2>
+	<div>
+		
 	</section>
 	
 	<footer></footer>

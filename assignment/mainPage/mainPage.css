@@ -35,7 +35,7 @@ body
 .customizePCContainer
 {
 	margin:auto;
-	max-width:40%; 
+	max-width:30%; 
 	position: relative;
 }
 
@@ -92,19 +92,44 @@ body
 	to {opacity: 1}
 }
 
-.sectionTitle
+.sectionTitle, .longSectionTitle
 {
-	background-color:#a37cf0;
+	background-color:#CEA2FD;
 	
-	width: 20%;
+	width: 15%;
 	position:relative;
-	left:100px;
-	padding:10px 10px;
-	font: 40px "Roboto",sans serif;
+	left:5%;
+	padding:2px 2px;
+	font: 30px "Roboto",sans serif;
 	color: white;
-	text-decoration: underline;
+	text-align:center;
+	margin-bottom:auto;
+	margin-top:auto;
+	
+	border: 5px solid white;
+}
+
+#linkTo p
+{
+	background-color:#856088;
+	
+	width:15%;
+	position:relative;
+	left:80%;
+	padding:2px 2px;
+	font: 30px "Roboto",sans serif;
+	color: white;
 	text-align:center;
 	
 	border: 5px solid white;
-	border-radius: 20px;
+}
+
+#linkTo a
+{
+	text-decoration:none;
+}
+
+.longSectionTitle
+{
+	width:90%;
 }
