@@ -1,24 +1,13 @@
-<head>
-	<link rel='stylesheet' href='style.css'>
-</head>
-
-<body>
-<header>
-	<nav>
-		<a href="assignment">
-			<img id = "logo" src="image/logo.png">
-		</a>
-
-		<img id="companyName" src="image/name.png";>
-
-		<a>
-			<img id = "user" src="image/user.png">
-		</a>
+<header class = "header" id = "header">
+	<nav class = "navigation left" id = "navigation left">
+		<a href = "/WebAssignment/"><img src = "/image/logo-white.png" alt="Home"></a>
+		<a href = "/WebAssignment/PC/">Build PC</a>
+		<a href = "/WebAssignment/Product/">Products</a>
+		<a href = "/WebAssignment/Contact/">Contact Us</a>
 		
-		<a>
-			<img id = "cart" src="image/cart.png">
-		</a>
+	</nav>
+	<nav class = "navigation right" id = "navigation right">
+		<a href = "/WebAssignment/account/"><i class='bx bxs-user'></i></a>
+		<a href = "/WebAssignment/cart/"><i class='bx bxs-cart'></i></a>
 	</nav>
 </header>
-
-</body>
