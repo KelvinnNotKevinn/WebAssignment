@@ -14,8 +14,49 @@
 
 <body>
     <?php
-    include('../includes/header.php')
-    <form action="confirmation.php" method="POST">
+    include('../includes/header.php');
+    $motherboardErr = $processorErr = $ramErr = $gpuErr = $storageErr = "";  
+    $motherboard = $processor = $ram = $gpu = $storage = ""; 
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        if (!isset($_POST['motherboard'])){  
+            $motherboardErr = "Please choose your motherboard";  
+        } else {  
+            $motherboard = input_data($_POST['motherboard']);  
+        }
+
+        if (!isset($_POST['processor'])){  
+            $processorErr = "Please choose your processor";  
+        } else {  
+            $processor = input_data($_POST['processor']);  
+        }
+
+        if (!isset($_POST['ram'])){  
+            $ramErr = "Please choose your ram.";  
+        } else {  
+            $ram = input_data($_POST['ram']);  
+        }
+
+        if (!isset($_POST['gpu'])){  
+            $gpuErr = "Please choose your gpu";  
+        } else {  
+            $gpu = input_data($_POST['gpu']);  
+        }
+
+        if (!isset($_POST['storage'])){  
+            $storageErr = "Please choose your storage";  
+        } else {  
+            $storage = input_data($_POST['storage']);  
+        }
+    }
+    function input_data($data) {  
+        $data = trim($data);  
+        $data = stripslashes($data);  
+        $data = htmlspecialchars($data);  
+        return $data;  
+    }
+    ?>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" > 
         <div>
             <label for =""> 1. Motherboard </label><br>
             <input type="radio" name="motherboard" value="101" /> RM425 - AMD B450M GAMING MOTHERBOARD <br>
@@ -50,7 +91,28 @@
             <button type="submit" name="confirmation" >CUSTOMIZE!</button>
         </div>   
     </form>
-    ?>
+    <?php  
+    if(isset($_POST['submit'])) {  
+        if($nameErr == "" && $emailErr == "" && $phoneErr == "" && $salErr == "" && $enquiryErr == "" && $subjectErr == "") {  
+            echo "<h3> <b>Added to cart</b> </h3>";  
+            echo "<h3>Your Input:</h3>"; 
+		    echo "Salutation:" .$sal;
+		    echo "<br>";
+            echo "Name: " .$name;  
+            echo "<br>";  
+            echo "Email: " .$email;  
+            echo "<br>";  
+            echo "Phone: " .$phone;  
+            echo "<br>";  
+            echo "Type of enquiry: " .$enquiry;  
+            echo "<br>";  
+            echo "Subject: " .$subject; 
+        } else {  
+        echo "<div style ='color:#ff0000'>Error Occured.</div>";
+        }  
+    }  
+include('../includes/footer.php'); 
+?> 
 </body>
 
 </html>
