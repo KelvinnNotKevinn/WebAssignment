@@ -15,6 +15,15 @@
 <body>
     <?php
     include('../includes/header.php');
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "web_assignment";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    
     $motherboardErr = $processorErr = $ramErr = $gpuErr = $storageErr = "";  
     $motherboard = $processor = $ram = $gpu = $storage = ""; 
 
@@ -88,25 +97,14 @@
             <input type="radio" name="storage" value="503" /> RM642 - SAMSUNG 980 1TB NVME M.2 SSD<br><br>
         </div>
         <div>
-            <button type="submit" name="confirmation" >CUSTOMIZE!</button>
+            <button type="submit" name="confirmation" value = "customize" >CUSTOMIZE!</button>
         </div>   
     </form>
     <?php  
     if(isset($_POST['submit'])) {  
-        if($nameErr == "" && $emailErr == "" && $phoneErr == "" && $salErr == "" && $enquiryErr == "" && $subjectErr == "") {  
+        if($motherboardErr == "" && $processorErr == "" && $ramErr == "" && $gpuErr == "" && $storageErr == "") { 
+             
             echo "<h3> <b>Added to cart</b> </h3>";  
-            echo "<h3>Your Input:</h3>"; 
-		    echo "Salutation:" .$sal;
-		    echo "<br>";
-            echo "Name: " .$name;  
-            echo "<br>";  
-            echo "Email: " .$email;  
-            echo "<br>";  
-            echo "Phone: " .$phone;  
-            echo "<br>";  
-            echo "Type of enquiry: " .$enquiry;  
-            echo "<br>";  
-            echo "Subject: " .$subject; 
         } else {  
         echo "<div style ='color:#ff0000'>Error Occured.</div>";
         }  
