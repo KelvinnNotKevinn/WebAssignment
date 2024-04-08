@@ -16,21 +16,25 @@
     $stmt->execute();
     $result = $stmt->get_result();
     
-    if ($result->num_rows == 1) {
-        // 找到用户，检查密码
+    if ($result->num_rows == 1) 
+    {
         $user = $result->fetch_assoc();
-        if ($password === $user['password']) {
-            header("Location: ../includes/header.php");
-                exit;
-        } else {
-
+        $hashed_password_from_db = $user['password'];
+        $hashed_password_from_input = hash('sha256', $password);
+        if ($hashed_password_from_db === $hashed_password_from_input) 
+        {
+            $_SESSION['userName'] = $userName;
+            header("Location: /WebAssignment");
+            exit;
+        } 
+        else 
+        {
             $errors['password'] = '*Password does not correct';
-
         }
-    } else {
-
+    } 
+    else 
+    {
         $errors['userName'] = '*Invalid username';
-        
     }
 
     mysqli_stmt_close($stmt);

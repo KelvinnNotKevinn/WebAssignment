@@ -14,13 +14,15 @@
 
 	$newUser = "INSERT INTO user (userName, email, password) VALUES(?,?,?)";
 
+	$hashed_password = hash('sha256', $newPassword);
+
 	$input = mysqli_prepare($conn,$newUser);
 
-	mysqli_stmt_bind_param($input, "sss", $newUserName, $email, $newPassword);
+	mysqli_stmt_bind_param($input, "sss", $newUserName, $email, $hashed_password);
 
 	if(mysqli_stmt_execute($input))
 	{
-		echo "create user successfully!";
+		$_SESSION['success_message'] = "Create user successfully!";
 	}
 	else
 	{
@@ -32,5 +34,4 @@
 
 	header("Location: index.php");
 	exit;
-
 ?>

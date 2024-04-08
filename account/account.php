@@ -29,7 +29,7 @@
                         <div id="passwordError" class="error"><?= $errors['password'] ?? '' ?></div>
                     </div>
                     <div class = "checkbox">
-                        <a href = "#">Forgot Password?</a>
+
                     </div>
                     <input class = "btn login" name = "login" type = "submit" value = "Login">
                     <div class = "create-account" id = "create-account">

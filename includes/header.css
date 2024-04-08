@@ -1,0 +1,124 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    padding: 25px 5%;
+    background: url(../image/headerBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    line-height: 60px;
+}
+
+.navigation.left {
+    display: flex;
+    align-items: center;
+}
+
+.navigation.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.navigation img {
+    width: 70px;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.dropDown .dropbtn {
+    margin-right: 30px;
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.dropbtn i {
+    color: white;
+}
+
+.navigation i,
+.dropDown .dropbtn {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.navigation.right i,
+.dropDown .dropbtn {
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.navigation.right a:hover i,
+.dropDown:hover .dropbtn {
+    transform: scale(1.2);
+}
+
+.navigation.left a:not(:first-of-type)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.navigation.left a:not(:first-of-type):hover::after {
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.dropDown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: #303030;
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    z-index: 1;
+    left: 100%;
+    transform: translateX(-117%);
+    top: 100%;
+}
+
+.dropDown-content a, 
+.dropDown h3, 
+.dropDown span {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}

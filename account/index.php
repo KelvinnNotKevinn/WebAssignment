@@ -1,9 +1,28 @@
+<?php
+session_start();
+
+if (isset($_SESSION['success_message'])) 
+{
+    echo "<script>alert('{$_SESSION['success_message']}');</script>";
+    unset($_SESSION['success_message']);
+}
+
+if (isset($_SESSION['userName']))//check user login or not
+{
+    echo "<script>alert('You are already login. If you want to login other account, please logout first');</script>";
+    unset($_SESSION['userName']);
+    header("Location: /WebAssignment/index.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KKYB PC Build</title>
+    <link rel = "stylesheet" href = "../includes/header.css">
     <link rel = "stylesheet" href = "index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -40,7 +59,7 @@
             
             if (empty($errors))
             {
-                header("Location: ../includes/header.php");
+                header("Location: /WebAssignment/index.php");
                 exit;
             }
             else
@@ -83,6 +102,8 @@
                 $errors['agree'] = '*An agree is required';
             }
 
+            include ('checkUserName.php');
+
             if (empty($errors))
             {
                 include ('createUser.php');
@@ -115,8 +136,8 @@
         $errors = '';
         include ('account.php');
     }
-    
-    ?>
+?>
     <script src = "index.js"></script>
+    <script src = "../includes/dropDown.js"></script>
 </body>
 </html>
