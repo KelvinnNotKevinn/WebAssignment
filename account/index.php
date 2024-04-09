@@ -138,6 +138,5 @@ if (isset($_SESSION['userName']))//check user login or not
     }
 ?>
     <script src = "index.js"></script>
-    <script src = "../includes/dropDown.js"></script>
 </body>
 </html>
