@@ -1,0 +1,82 @@
+body{
+	font-family:sans-serif;
+	background-color:dimgray;
+}
+
+h1{
+	font-style: italic;
+	color:#702963;
+}
+
+
+.container{
+	position: relative;
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	border: #702963 2px solid;
+	border-radius: 5px;
+	width:600px;
+	height: auto;
+	margin: auto;
+	transition: 0.5s;
+	padding: 25px;
+	background-color: antiquewhite;
+}
+
+.cart-details{
+	background-color: whitesmoke;
+	height: 100px;
+	overflow-y: auto;
+	border: 1px #702963 solid;
+	border-radius: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 80%; /* Adjust the width as needed */
+    padding: 10px; /* Add padding for better appearance */
+    margin: 5px 0; /* Add margin for spacing between input fields */
+    border: 1px solid #ccc; /* Add border for clarity */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+textarea {
+    height: 100px; /* Adjust the height of textarea */
+}
+
+.total-price{
+	font-weight: bold;
+	color: #702963;
+}
+
+.checkout-form{
+	text-align: left;
+	margin-top:20px;
+}
+
+.checkout-form button {
+    width: 47%; /* Use 49% width for each button */
+    padding: 10px;
+    margin: 5px 1%; /* Add 1% margin between buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	border: 1px #702963 solid;
+}
+
+.checkout-form button:hover {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+/* Style for expiration date inputs */
+#expiration_month,
+#expiration_year,
+#cvv {
+    width: 25%; 
+    display: inline-block;
+    margin-right: 10px; 
+}

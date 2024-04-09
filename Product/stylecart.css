@@ -1,0 +1,191 @@
+body{
+	font-family:sans-serif;
+	background-color:dimgray;
+}
+
+.container{
+	position: relative;
+	margin-top:10%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: #702963 2px solid;
+	border-radius: 5px;
+	width: 950px;
+	height: 800px;
+	margin: auto;
+	transition: 0.5s;
+	background-color: antiquewhite;
+}
+
+h1{
+	margin: 5%;
+	background-color: #702963;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+	font-style: italic;
+}
+
+.listProduct {
+    padding: 10px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+	background-color:whitesmoke;
+	border-radius: 5px;
+	overflow-y: auto; /*enable vertical scrolling*/
+	max-height:500px;
+}
+
+
+.checkOut {
+	position:absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-right: 60px;
+	padding-left: 60px;
+}
+
+.checkOut .total {
+    font-weight: bold;
+}
+
+.checkOut .quantity {
+    font-weight: bold;
+}
+
+.checkOut button {
+    background-color: #702963;
+    color: white;
+    border: 1px solid #702963;
+    padding: 10px 20px;
+    cursor: pointer;
+	border-radius: 5px;
+}
+
+.checkOut button:hover {
+    background-color: #6a1b9a;
+	transition: all 0.25s ease;
+}
+
+.checkOut .closeShopping {
+    background-color: #ccc;
+    color: #333;
+    border: 1px solid purple;
+    padding: 10px 20px;
+    cursor: pointer;
+	border-radius: 5px;
+}
+
+.checkOut .closeShopping:hover {
+    background-color: red;
+	transition: all 0.25s ease;
+	color: white;
+}
+
+.listProduct .item {
+	display: flex;
+	align-items: center;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    letter-spacing: 1px;
+	border-radius: 5px;
+	
+}
+
+.listProduct .item:nth-child(odd){
+	background-color: lightgrey;
+}
+
+.listProduct .item img {
+    width: 20%;
+	margin-right: 20px;
+}
+
+.listProduct .item .details {
+    flex-grow: 1; /* Take up remaining space */
+	
+}
+
+
+.listProduct .item .title {
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.listProduct .item .price {
+    font-style: italic;
+	margin-bottom: 10px;
+}
+
+.listProduct .item .totalPrice {
+    font-weight: bold;
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+.listProduct .item:hover .title {
+    cursor: pointer;
+}
+
+.item input[type="number"] {
+    width: 40px; /* Adjust the width as needed */
+	height: 15px;
+	margin-left: 2px;
+    padding: 2px;
+    font-size: small; /* Adjust the font size as needed */
+}
+
+.listProduct .item button {
+	width: 70px;
+    background-color: white;
+    color: purple;
+    font-size: small;
+    font-weight: 600;
+	padding: 3px; /*increase size up down for border*/
+	margin: 15px;
+    border: 1px solid purple;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.listProduct .item button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+.listProduct .listProduct .count {
+    margin: 0px 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.listProduct .productTitle,
+.listProduct .productPrice {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.listProduct .item .quantity {
+    margin-left: auto; /* Align quantity input to the right */
+    display: flex;
+    align-items: center;
+}
+
+.listProduct .item .quantity-text {
+    margin-right: 10px; /* Add spacing between quantity text and input */
+}
+
