@@ -7,7 +7,18 @@
 		
 	</nav>
 	<nav class = "navigation right" id = "navigation right">
-		<a href = "/WebAssignment/account/"><i class='bx bxs-user'></i></a>
+		<div class = "dropDown">
+			<button onclick="dropDown()" class="dropbtn"><i class='bx bxs-user'></i></button>
+			<div class = "dropDown-content" id = "dropDownAccount">
+				<?php if (isset($_SESSION['userName'])) : ?>
+					<span>Welcome, <?php echo $_SESSION['userName']; ?></span>
+					<a href = "/account/logout.php">Log Out</a>
+				<?php else : ?>
+					<h3>Please go login first.</h3>
+					<a href = "/account/index.php">Login</a>
+				<?php endif; ?>
+			</div>
+		</div>
 		<a href = "/WebAssignment/cart/"><i class='bx bxs-cart'></i></a>
 	</nav>
 </header>
