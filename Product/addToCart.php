@@ -1,5 +1,4 @@
 <?php
-session_start();
 include('config.php');
 
 // Check if the POST request contains the product ID
@@ -17,7 +16,8 @@ if (isset($_GET['id']))
         $product = $productResult->fetch_assoc();
 
         // Check if the product already exists in the cart
-        if (isset($_SESSION['cart'][$productId])) {
+        if (isset($_SESSION['cart'][$productId])) 
+		{
             // If the product already exists, update the quantity
             $_SESSION['cart'][$productId]['quantity'] += 1;
         } 

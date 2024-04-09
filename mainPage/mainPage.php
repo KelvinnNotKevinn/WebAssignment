@@ -3,7 +3,7 @@
 
 <head>
 	<title>Mainpage</title>
-	<link rel="stylesheet" href="mainPage.css"> 
+	<link rel="stylesheet" href="mainPage.css">	
 	<script src="translate.js"></script>
 </head>
 	
@@ -90,14 +90,16 @@
 			<div class="productDescFlex">
 				<h3>G203 LIGHTSYNC</h3>
 				<h4>Make the most of play time with G203—a gaming mouse in a variety of vibrant colors</h4>	
-				<a href="#" class="linkToProduct">
+				<br>
+				<a href="/Product#G203 LIGHTSYNC" class="linkToProduct">
 					<h3>BUY NOW</h3>
 				</a>
 			</div>
 			<div class="productDescFlex">
 				<h3>G213 PRODIGY</h3>
 				<h4>Durable with gaming-grade performance. Tactile Mech-Dome keyswitches are spill-resistant</h4>		
-				<a href="#" class="linkToProduct">
+				<br>
+				<a href="/Product#G213 PRODIGY" class="linkToProduct">
 					<h3>BUY NOW</h3>
 				</a>
 			</div>
@@ -110,7 +112,8 @@
 			<div class="productDescFlex">
 				<h3>G335 Gaming Headset</h3>
 				<h4>A lightweight, cool wired headset made with a suspension headband design with an adjustable strap</h4>		
-				<a href="#" class="linkToProduct">
+				<br>
+				<a href="/Product#G335 Gaming Headset" class="linkToProduct">
 					<h3>BUY NOW</h3>
 				</a>
 			</div>
@@ -122,10 +125,7 @@
 			<br>
 	</div>
 		
-	</section>
-	
-	<footer></footer>
-	
+	</section>	
 </body>
 
 

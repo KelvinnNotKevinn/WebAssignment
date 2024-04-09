@@ -37,21 +37,37 @@ body {
     flex-direction: column;
 }
 
-.item .logo {
-    color: white;
-    font-size: 30px;
-    line-height: 60px; 
+.itemContainer
+{
+	height:30%;
+	/*border:2px solid black;*/	
+	display:flex;
 }
 
-.item .logo img {
-    width: 70px;
-    height: 50px;
-    margin-right: -10px;
-    margin-left: -15px;
-    margin-bottom: -10px;
+.logoContainer
+{
+	/*border:2px solid black;*/	
+	height:100%;
+	font-size: 50px;
+	padding:auto;
 }
 
-.text-item h2 {
+.logoContainer .logo 
+{
+	/*border:2px solid black;*/	
+	height:100%;
+    float:left;
+	margin-right:2%;
+}
+
+#companyName
+{
+	font-size:50px;
+	margin:auto;
+}
+
+.text-item h2 
+{
     font-size: 40px;
     line-height: 1;
 }

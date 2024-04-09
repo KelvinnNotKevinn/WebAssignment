@@ -1,5 +1,4 @@
 <?php
-session_start();
 include('config.php');
 
 // Check if the request method is POST
@@ -70,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 echo "<div class='item'>";
                 if (isset($item["img"])) 
 				{
-                    echo "<img src='" . $item["img"] . "'>";
+                    echo "<img src='/Images/" . $item["img"] . "'>";
                 }
 				
                 echo "<div class='details'>";

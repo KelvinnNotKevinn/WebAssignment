@@ -15,26 +15,11 @@ include('config.php');
 </head>
 
 <body>
+	<?php include ('../includes/header.php') ?>
+	
 	<div class="container">
-	<header>
-		<h1>Gaming Accesories</h1>
-		<div class="shopping">
-			<a href="shoppingcart.php"> <i class="fas fa-shopping-bag" ></i> </a>
-			<span class="quantity" id="cartQuantity">
-                <?php
-					if (isset($_SESSION['cart'])) 
-					{
-						$totalQuantity = array_sum(array_column($_SESSION['cart'], 'quantity'));
-						echo $totalQuantity;
-					} 
-					else 
-					{
-						echo "0";
-					}
-                ?>
-            </span>
-		</div>
-	</header>
+	
+	<h1>Gaming Accesories</h1>
 	
 	<div class="list">
 		<?php include ('productdB.php');?>

@@ -1,7 +1,10 @@
 <div class = "container" id = "container">
         <div class = "item" id = "item">
-            <h2 class = "logo"><img src = "/image/logo-white.png" alt="Logo">KKYB PC Build</h2>
-            <div class = "text-item">
+			<div class="itemContainer">
+				<div class="logoContainer"><img src = "/images/logo-white.png"  class="logo" alt="Logo"></div>
+				<h2 id="companyName">KKYB PC Build</h2>
+            </div>
+			<div class = "text-item">
                 <h2>Welcome! <br><span>To Our Website</span></h2>
                 <p>Come to start to build your PC.<br>KKYB, your best choice.</p>
                 <div class="social-icon">

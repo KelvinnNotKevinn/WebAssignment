@@ -10,14 +10,15 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) 
 	{
         // Append each product's HTML representation
-        $htmlContent .= '<div class="item">';
-        $htmlContent .= '<div class="product-image-wrapper" onclick="openPreview(\'' . $row["id"] .'\',\'' . $row["img"] . '\', \'' . $row["name"] . '\', \'' . number_format($row["price"]) . '\', \'' . $row["desc"] . '\', \'' . $row["spec"] . '\')">';
-        $htmlContent .= '<img src="' . $row["img"] . '" class="product-image">';
+		$htmlContent .= '<div class="product-image-wrapper" onclick="openPreview(\'' . $row["id"] .'\',\'' . $row["img"] . '\', \'' . $row["name"] . '\', \'' . number_format($row["price"]) . '\', \'' . $row["desc"] . '\', \'' . $row["spec"] . '\')">';
+        $htmlContent .= '<img src="/Images/' . $row["img"] . '" class="product-image">';
         $htmlContent .= '</div>';
-        $htmlContent .= '<div class="title">' . $row["name"] . '</div>';
-        $htmlContent .= '<div class="desc">' . $row["desc"] . '</div>';
-        $htmlContent .= '<div class="price">RM ' . number_format($row["price"]) . '</div>';
-        $htmlContent .= '<a href="addToCart.php?id='.$row["id"].'">Add to Cart</a>';
+		
+		$htmlContent .= '<div class="itemDesc">';
+        $htmlContent .= '<h2 class="title">' . $row["name"] . '</h2> <br>';
+        $htmlContent .= '<h3 class="desc">' . $row["desc"] . '</h3> <br>';
+        $htmlContent .= '<h3 class="price">RM ' . number_format($row["price"]) . '</h3> <br>';
+        $htmlContent .= '<h3 class="addToCartButton"><a href="addToCart.php?id='.$row["id"].'">Add to Cart</a></h3> <br>';
 		$htmlContent .= '</div>';
     }
 

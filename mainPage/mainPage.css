@@ -51,7 +51,6 @@ h4
     animation-duration: 5s;
     animation-iteration-count: infinite;
 	
-	border-radius:1000px;
 }
 
 @keyframes example 
