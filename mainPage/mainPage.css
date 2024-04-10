@@ -142,8 +142,9 @@ h4
 	left:5%;
 }
 
-.linkToProduct>h3
+.linkToProduct
 {
+	transition: 0.5s;
 	width:12vw;
 	background-color: #643B9F;
 	text-align:center;
@@ -151,10 +152,15 @@ h4
 	border: 4px solid white;
 }
 
-.linkToProduct>h3:hover
+.linkToProduct:hover
 {
 	opacity:70%;
 	transition: 0.5s;
+}
+
+.linkToProduct a
+{
+	text-decoration:none;
 }
 
 .sectionTitle, .longSectionTitle

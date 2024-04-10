@@ -40,11 +40,15 @@ include('addToCart.php');
 			`
 				<img src="/Images/${img}">
 				<h2>${name}</h2>
-				<p>Price: RM ${price}</p>
 				<br>
-				<p>Description: ${description}</p>
+				<p class="previewDetailsTitle">Price: </p>
+				<p class="previewDetails">RM ${price}</p>
 				<br>
-				<p>Specifications: ${spec}</p>				
+				<p class="previewDetailsTitle">Description: </p>
+				<p class="previewDetails">${description}</p>
+				<br>
+				<p class="previewDetailsTitle">Specifications: </p>
+				<p class="previewDetails">${spec}</p>
 				<br>
 				<h3 class="addToCartButton"><a href="addToCart.php?id=${id}">Add to Cart</a></h3>
 			`;

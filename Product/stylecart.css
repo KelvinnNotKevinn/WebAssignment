@@ -1,6 +1,6 @@
 body{
 	font-family:sans-serif;
-	background-color:dimgray;
+	background-color:black;
 }
 
 .container{
@@ -16,15 +16,15 @@ body{
 	height: 90%;
 	margin: auto;
 	transition: 0.5s;
-	background-color: antiquewhite;
+	background-color: #E3CCFF;
 }
 
 h1
 {
 	margin: 5%;
-	background-color: #702963;
+	background-color: #520380;
 	border-radius: 5px;
-	padding: 5px;
+	padding:1%;
 	color: white;
 	font-style: italic;
 	/*border:5px solid red;*/
@@ -69,9 +69,8 @@ h1
 }
 
 .checkOut button {
-    background-color: #702963;
+    background-color: #520380;
     color: white;
-    border: 1px solid #702963;
     padding: 10px 20px;
     cursor: pointer;
 	border-radius: 5px;
@@ -97,11 +96,12 @@ h1
 	color: white;
 }
 
-.listProduct .item {
+.listProduct .item 
+{
 	display: flex;
 	align-items: center;
     text-align: left;
-    background-color: white;
+    background-color: #EFE2FF;
     padding: 20px;
     letter-spacing: 1px;
 	border-radius: 5px;
@@ -109,7 +109,7 @@ h1
 }
 
 .listProduct .item:nth-child(odd){
-	background-color: lightgrey;
+	background-color: #F8F4F8; 
 }
 
 .listProduct .item img {

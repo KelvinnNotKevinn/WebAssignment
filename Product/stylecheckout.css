@@ -1,6 +1,6 @@
 body{
 	font-family:sans-serif;
-	background-color:dimgray;
+	background-color:black;
 }
 
 h1{
@@ -22,7 +22,7 @@ h1{
 	margin: auto;
 	transition: 0.5s;
 	padding: 25px;
-	background-color: antiquewhite;
+	background-color: #E3CCFF;
 	
 	/*border: 5px solid red;*/
 

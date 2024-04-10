@@ -33,9 +33,9 @@
 					<h3>DAYLIGHT</h3>
 					<h4>High-performance, sleek white build that combines power and style for any computing need</h4>
 					<br>
-					<a href="#" class="linkToProduct">
-						<h3>BUILD NOW!!!</h3>
-					</a>
+					<h3 class="linkToProduct">
+						<a href="#" >BUILD NOW!!!<a>
+					</h3>
 				</div>
 			</div>
 			
@@ -47,9 +47,9 @@
 					<h3>ROSELIA</h3>
 					<h4>Stylish pink build that doesn't compromise on performance, perfect for those who want a standout look without sacrificing power</h4>
 					<br>
-					<a href="#" class="linkToProduct">
-						<h3>BUILD NOW!!!</h3>
-					</a>
+					<h3 class="linkToProduct">
+						<a href="#" >BUILD NOW!!!<a>
+					</h3>
 				</div>
 			</div>
 			
@@ -61,9 +61,9 @@
 					<h3>NIGHTWING</h3>
 					<h4>Formidable black build, marrying sleek design with high-performance components, ready to conquer any task or gaming challenge with style and power</h4>
 					<br>
-					<a href="#" class="linkToProduct">
-						<h3>BUILD NOW!!!</h3>
-					</a>
+					<h3 class="linkToProduct">
+						<a href="#" >BUILD NOW!!!<a>
+					</h3>
 				</div>
 			</div>
 			 
@@ -89,19 +89,23 @@
 			</div>
 			<div class="productDescFlex">
 				<h3>G203 LIGHTSYNC</h3>
+				<br>
 				<h4>Make the most of play time with G203—a gaming mouse in a variety of vibrant colors</h4>	
 				<br>
-				<a href="/Product#G203 LIGHTSYNC" class="linkToProduct" onclick="window.scrollTo(0,200)">
-					<h3>BUY NOW</h3>
-				</a>
+				<br>
+				<h3 class="linkToProduct">
+					<a href="/Product#G203 LIGHTSYNC">BUY NOW</a>
+				</h3>
 			</div>
 			<div class="productDescFlex">
 				<h3>G213 PRODIGY</h3>
+				<br>
 				<h4>Durable with gaming-grade performance. Tactile Mech-Dome keyswitches are spill-resistant</h4>		
 				<br>
-				<a href="/Product#G213 PRODIGY" class="linkToProduct">
-					<h3>BUY NOW</h3>
-				</a>
+				<br>
+				<h3 class="linkToProduct">
+					<a href="/Product#G213 PRODIGY">BUY NOW</a>
+				</h3>
 			</div>
 			<div class="productImageFlex">
 				<img src="/Images/g213.PNG" class="productImage">
@@ -111,17 +115,19 @@
 			</div>
 			<div class="productDescFlex">
 				<h3>G335 Gaming Headset</h3>
+				<br>
 				<h4>A lightweight, cool wired headset made with a suspension headband design with an adjustable strap</h4>		
 				<br>
-				<a href="/Product#G335 Gaming Headset" class="linkToProduct">
-					<h3>BUY NOW</h3>
-				</a>
+				<br>
+				<h3 class="linkToProduct">
+					<a href="/Product#G335 Gaming Headset">BUY NOW</a>
+				</h3>
 			</div>
 		</div>
 		
 	</div>
 	<div class="moreProducts">
-			<a href="#"><h2>View More ></h2></a>
+			<a href="/Product"><h2>View More ></h2></a>
 			<br>
 	</div>
 		

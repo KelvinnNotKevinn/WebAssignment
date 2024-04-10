@@ -1,5 +1,6 @@
+<?php include ('../includes/header.php') ?>
+
 <?php
-session_start();
 
 if (isset($_SESSION['success_message'])) 
 {
@@ -26,7 +27,6 @@ if (isset($_SESSION['userName']))//check user login or not
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <?php include ('../includes/header.php') ?>
     
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST')
