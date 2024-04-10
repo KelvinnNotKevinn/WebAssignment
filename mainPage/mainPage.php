@@ -91,7 +91,7 @@
 				<h3>G203 LIGHTSYNC</h3>
 				<h4>Make the most of play time with G203—a gaming mouse in a variety of vibrant colors</h4>	
 				<br>
-				<a href="/Product#G203 LIGHTSYNC" class="linkToProduct">
+				<a href="/Product#G203 LIGHTSYNC" class="linkToProduct" onclick="window.scrollTo(0,200)">
 					<h3>BUY NOW</h3>
 				</a>
 			</div>

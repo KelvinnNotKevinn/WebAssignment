@@ -1,6 +1,6 @@
 <?php
 include('addToCart.php');
-include('config.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,6 @@ include('config.php');
 </head>
 
 <body>
-	<?php include ('../includes/header.php') ?>
 	
 	<div class="container">
 	
@@ -39,22 +38,24 @@ include('config.php');
 			var previewContent = document.querySelector('.preview-content');
 			previewContent.innerHTML = 
 			`
-				<img src="${img}">
+				<img src="/Images/${img}">
 				<h2>${name}</h2>
 				<p>Price: RM ${price}</p>
+				<br>
 				<p>Description: ${description}</p>
+				<br>
 				<p>Specifications: ${spec}</p>				
-				
-				<a href="addToCart.php?id=${id}">Add to Cart</a>
+				<br>
+				<h3 class="addToCartButton"><a href="addToCart.php?id=${id}">Add to Cart</a></h3>
 			`;
 			document.querySelector('.product-preview').style.display = 'block';
-			document.querySelector('.container').classList.add('blur-background');
+			document.querySelector('.container').classList.toggle('blur-background');
 		}
 
 		function closePreview() 
 		{
 			document.querySelector('.product-preview').style.display = 'none';
-			document.querySelector('.container').classList.remove('blur-background');
+			document.querySelector('.container').classList.toggle('blur-background');
 		}
 	</script>
 </body>

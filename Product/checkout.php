@@ -142,27 +142,25 @@ function input_data($data)
         <h1>Checkout</h1>
         <h3>Shopping Cart Items</h3>
         <div class="cart-details">
-            <ul>
-                <?php
-                $totalPrice = 0;
-                // Display the items in the shopping cart
-                if (!empty($_SESSION['cart'])) 
+			<?php
+			$totalPrice = 0;
+			// Display the items in the shopping cart
+			if (!empty($_SESSION['cart'])) 
+			{
+				foreach ($_SESSION['cart'] as $item) 
 				{
-                    foreach ($_SESSION['cart'] as $item) 
-					{
-                        echo "<div class='item'>";
-                        echo "{$item['name']} - Quantity: {$item['quantity']}";
-                        echo "</div>";
+					echo "<div class='item'>";
+					echo "{$item['name']} - Quantity: {$item['quantity']}";
+					echo "</div>";
 
-                        //calculate total price for each item and accumulate
-                        $totalPrice += ($item['price'] * $item['quantity']);
-                    }
-                } else 
-				{
-                    echo "Cart is empty";
-                }
-                ?>
-            </ul>
+					//calculate total price for each item and accumulate
+					$totalPrice += ($item['price'] * $item['quantity']);
+				}
+			} else 
+			{
+				echo "Cart is empty";
+			}
+			?>
         </div>
 		<br>
 		<br>

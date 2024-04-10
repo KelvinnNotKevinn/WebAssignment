@@ -1,5 +1,7 @@
 <?php
 include('config.php');
+include ('../includes/header.php');
+
 
 // Check if the POST request contains the product ID
 if (isset($_GET['id'])) 
@@ -33,9 +35,7 @@ if (isset($_GET['id']))
                 'quantity' => 1
             );
         }
-        // Redirect to shoppingcart.php
-        header("Location: shoppingcart.php");
-        exit();
+		header("Location:index.php");
     } 
 	else 
 	{

@@ -13,22 +13,25 @@ body{
 	border: #702963 2px solid;
 	border-radius: 5px;
 	width: 950px;
-	height: 800px;
+	height: 90%;
 	margin: auto;
 	transition: 0.5s;
 	background-color: antiquewhite;
 }
 
-h1{
+h1
+{
 	margin: 5%;
 	background-color: #702963;
 	border-radius: 5px;
 	padding: 5px;
 	color: white;
 	font-style: italic;
+	/*border:5px solid red;*/
 }
 
-.listProduct {
+.listProduct 
+{
     padding: 10px;
     margin: 5%;
     display: flex;
@@ -36,7 +39,9 @@ h1{
 	background-color:whitesmoke;
 	border-radius: 5px;
 	overflow-y: auto; /*enable vertical scrolling*/
-	max-height:500px;
+	max-height:65%;
+	
+	/*border:5px solid red;*/
 }
 
 
@@ -51,6 +56,8 @@ h1{
     align-items: center;
 	padding-right: 60px;
 	padding-left: 60px;
+	
+	/*border:5px solid red;*/
 }
 
 .checkOut .total {

@@ -2,11 +2,12 @@ body
 {
 	background-color: black;
 	font-family: sans-serif;
+	scroll-behavior: smooth;
 }
 
 .container
 {
-	border: 3px solid white;
+	/*border: 3px solid white;*/
 	width: 90%;
 	margin:auto;
 	transition: 0.5s;
@@ -15,7 +16,8 @@ body
 .container h1
 {
 	padding-top:2%;
-	border: 3px solid white;
+	padding-bottom:2%;
+	/*border: 3px solid white;*/
 	font-size: 30px;	
 	color: #CEA2FD;
 }
@@ -27,16 +29,35 @@ body
 	flex-direction:row;
 	width:100%;
 	
-	border:2px solid yellow;
+	border-bottom:3px solid white;
+	/*border:2px solid yellow;*/
+}
+
+.anchor
+{
+	display: block;
+	height: 100px; /*same height as header*/
+	margin-top: -100px; /*same height as header*/
+	
 }
 
 .product-image-wrapper
 {
-	flex:20%;
+	flex:25%;
 	width:100%;
-	margin:1%;
+	padding:1%;
 	
-	border: 3px solid white;
+	border-left: 3px solid white;
+	border-right: 3px solid white;
+	border-top: 3px solid white;
+}
+
+.product-image-wrapper:hover 
+{
+	cursor:pointer;
+    background-color:antiquewhite;
+	transition:1s ease;
+	transform: scale(1.05)
 }
 
 .product-image
@@ -46,10 +67,13 @@ body
 
 .itemDesc
 {
-	border: 3px solid white;
-	flex:60%;
+	flex:70%;
 	color:white;
-	margin:1%;
+	padding:1%;
+	
+	border-top: 3px solid white;
+	border-right: 3px solid white;
+
 }
 
 .price
@@ -59,15 +83,30 @@ body
 
 .addToCartButton
 {
-	width:12vw;
+	width:150px;
 	background-color: #643B9F;
 	text-align:center;
-	padding:1%;
+	padding-top:1%;
+	padding-bottom:1%;
 	border: 4px solid white;
+	transition:0.5s ease;
+}
+
+.addToCartButton:hover
+{
+	opacity:70%;
+}
+
+.addToCartButton:active
+{
+	background-color:red;
+	opacity:100%;
+	transition:0.1s;
 }
 
 .addToCartButton a
 {
+	font-size:20px;
 	color:white;
 	text-decoration: none;
 }
@@ -119,8 +158,13 @@ body
     color: white;
 }
 
-.container.blur-background {
+.blur-background 
+{
     filter: blur(5px); /* Apply blur effect to the background when product preview is open */
     pointer-events: none; /* Disable pointer events on blurred background */
 }
 
+.preview-content .addToCartButton
+{
+	margin:auto;
+}
