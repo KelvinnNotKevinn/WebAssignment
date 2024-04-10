@@ -28,6 +28,12 @@
     $motherboard = $processor = $ram = $gpu = $storage = ""; 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        if (!isset($_POST['case'])){  
+            $motherboardErr = "Please choose your case";  
+        } else {  
+            $motherboard = input_data($_POST['case']);  
+        }
+
         if (!isset($_POST['motherboard'])){  
             $motherboardErr = "Please choose your motherboard";  
         } else {  
@@ -66,7 +72,34 @@
     }
     ?>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" > 
-        <div>
+        <div class="container">
+        <div class="radio-tile-group">
+            <div class="input-container">
+            <input type="radio" name="case" value="whiteid">
+            <div class="radio-tile">
+                <img src=“/images/white.jpg”>
+                <label for="walk">White</label>
+            </div>
+            </div>
+
+            <div class="input-container">
+            <input type="radio" name="case" value="pinkid">
+            <div class="radio-tile">
+                <img src=“/images/pink.jpg”>
+                <label for="bike">Pink</label>
+            </div>
+            </div>
+
+            <div class="input-container">
+            <input type="radio" name="case" value="blackid">
+            <div class="radio-tile">
+                <img src=“/images/black.jpg”>
+                <label for="car">Black</label>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div>  
             <label for =""> 1. Motherboard </label><br>
             <input type="radio" name="motherboard" value="101" /> RM425 - AMD B450M GAMING MOTHERBOARD <br>
             <input type="radio" name="motherboard" value="102" /> RM483 - ASUS STRIX Z270F GAMING MOTHERBOARD <br>
