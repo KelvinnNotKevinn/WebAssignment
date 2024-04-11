@@ -1,18 +1,18 @@
 <div class = "container" id = "container">
-        <div class = "item" id = "item">
-			<div class="itemContainer">
-				<div class="logoContainer"><img src = "/images/logo-white.png"  class="logo" alt="Logo"></div>
-				<h2 id="companyName">KKYB PC Build</h2>
-            </div>
-			<div class = "text-item">
-                <h2>Welcome! <br><span>To Our Website</span></h2>
-                <p>Come to start to build your PC.<br>KKYB, your best choice.</p>
-                <div class="social-icon">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-tiktok' ></i></a>
-                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                </div>                    
+    <div class = "content" id = "content">
+        <div class = "company" id = "company">
+            <div class = "item" id = "item">
+                <h2 class = "logo"><img src = "/Images/logo-white.png" alt="Logo">KKYB PC Build</h2>
+                <div class = "text-item">
+                    <h2>Welcome! <br><span>To Our Website</span></h2>
+                    <p>Come to start to build your PC.<br>KKYB, your best choice.</p>
+                    <div class="social-icon">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    </div>                    
+                </div>
             </div>
         </div>
         <div class = "login-section" id = "login-section">
@@ -78,4 +78,5 @@
                 </form>
             </div>
         </div>
+    </div>
 </div>
