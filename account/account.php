@@ -7,10 +7,10 @@
                     <h2>Welcome! <br><span>To Our Website</span></h2>
                     <p>Come to start to build your PC.<br>KKYB, your best choice.</p>
                     <div class="social-icon">
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-instagram'></i></a>
-                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
-                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-whatsapp'></i></a>
                     </div>                    
                 </div>
             </div>
