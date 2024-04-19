@@ -7,14 +7,6 @@ if (isset($_SESSION['success_message']))
     echo "<script>alert('{$_SESSION['success_message']}');</script>";
     unset($_SESSION['success_message']);
 }
-
-if (isset($_SESSION['userName']))//check user login or not
-{
-    echo "<script>alert('You are already login. If you want to login other account, please logout first');</script>";
-    unset($_SESSION['userName']);
-    header("Location: /WebAssignment/index.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>
@@ -59,7 +51,7 @@ if (isset($_SESSION['userName']))//check user login or not
             
             if (empty($errors))
             {
-                header("Location: /WebAssignment/index.php");
+                header("Location: /WebAssignment/mainPage/mainPage.php");
                 exit;
             }
             else
