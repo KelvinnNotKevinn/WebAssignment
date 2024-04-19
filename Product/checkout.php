@@ -91,16 +91,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Insert cart items into the orders table
             foreach ($_SESSION['cart'] as $item) 
 			{
-                $item_name = $item['name'];
+				$id = $item['id'];
+				$item_name = $item['name'];
                 $quantity = $item['quantity'];
                 $price = $item['price'];
+				
+				if(isset($item['components']))
+				{
+					$componentId = array($item['components']["motherBoardId"],
+										 $item['components']["processorId"],
+										 $item['components']["ramId"],
+										 $item['components']["gpuId"],
+										 $item['components']["storageId"]);
 
-                // Insert cart item into the orders table
-                $sql_cart_item = "INSERT INTO cart_items (order_id, item_name, quantity, price) 
-                                  VALUES ('$order_id', '$item_name', '$quantity', '$price')";
-								  
-                // Execute the SQL query for cart item insertion
-                mysqli_query($conn, $sql_cart_item);
+					$componentName = array($item['components']["motherBoard"],
+										   $item['components']["processor"],
+										   $item['components']["ram"],
+										   $item['components']["gpu"],
+										   $item['components']["storage"]);
+										   
+					$sql_cart_items = "INSERT INTO cart_items (PCcase_id ,order_id, item_name, quantity, price) 
+									   VALUES ('$id', '$order_id', '$item_name', '$quantity', '$price')";
+
+					mysqli_query($conn, $sql_cart_items);
+					
+					for($int=0; $int<count($componentId); $int++)
+					{
+						$sql_customize_components = "INSERT INTO customize_components (PCcase_id ,order_id, component_id, component_name, quantity) 
+									                 VALUES ('$id', '$order_id', '$componentId[$int]', '$componentName[$int]', '$quantity')";
+						
+						mysqli_query($conn, $sql_customize_components);
+					}
+				}
+				else
+				{
+					// Insert cart item into the orders table
+					$sql_cart_item = "INSERT INTO cart_items (item_id ,order_id, item_name, quantity, price) 
+									  VALUES ('$id', '$order_id', '$item_name', '$quantity', '$price')";
+									  
+					// Execute the SQL query for cart item insertion
+					mysqli_query($conn, $sql_cart_item);
+				}
             }
 
             // Clear the cart
@@ -152,6 +183,15 @@ function input_data($data)
 					echo "<div class='item'>";
 					echo "{$item['name']} - Quantity: {$item['quantity']}";
 					echo "</div>";
+					
+					if(isset($item["components"]))
+					{
+						echo "<div class='item'>{$item['components']['motherBoard']} - Quantity: {$item['quantity']}</div>";
+						echo "<div class='item'>{$item['components']['processor']} - Quantity: {$item['quantity']}</div>";
+						echo "<div class='item'>{$item['components']['ram']} - Quantity: {$item['quantity']}</div>";
+						echo "<div class='item'>{$item['components']['gpu']} - Quantity: {$item['quantity']}</div>";
+						echo "<div class='item'>{$item['components']['storage']} - Quantity: {$item['quantity']}</div>";					
+					}
 
 					//calculate total price for each item and accumulate
 					$totalPrice += ($item['price'] * $item['quantity']);
