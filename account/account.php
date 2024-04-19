@@ -2,7 +2,7 @@
     <div class = "content" id = "content">
         <div class = "company" id = "company">
             <div class = "item" id = "item">
-                <h2 class = "logo"><img src = "/Images/logo-white.png" alt="Logo">KKYB PC Build</h2>
+                <h2 class = "logo"><img src = "/WebAssignment/Images/logo-white.png" alt="Logo">KKYB PC Build</h2>
                 <div class = "text-item">
                     <h2>Welcome! <br><span>To Our Website</span></h2>
                     <p>Come to start to build your PC.<br>KKYB, your best choice.</p>
@@ -11,6 +11,10 @@
                         <a href="#"><i class='bx bxl-instagram'></i></a>
                         <a href="#"><i class='bx bxl-tiktok' ></i></a>
                         <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-whatsapp'></i></a>
                     </div>                    
                 </div>
             </div>

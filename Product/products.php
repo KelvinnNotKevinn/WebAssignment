@@ -12,7 +12,7 @@ if ($result->num_rows > 0) {
         // Append each product's HTML representation
 		$htmlContent .= '<div class="product-image-wrapper" onclick="openPreview(\'' . $row["id"] .'\',\'' . $row["img"] . '\', \'' . $row["name"] . '\', \'' . number_format($row["price"]) . '\', \'' . $row["desc"] . '\', \'' . $row["spec"] . '\')">';
 		$htmlContent .='<span class="anchor" id="'.$row["name"].'"></span>';
-        $htmlContent .= '<img src="/Images/' . $row["img"] . '" class="product-image">';
+        $htmlContent .= '<img src="/WebAssignment/Images/' . $row["img"] . '" class="product-image">';
         $htmlContent .= '</div>';
 		
 		$htmlContent .= '<div class="itemDesc">';

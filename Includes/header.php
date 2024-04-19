@@ -1,13 +1,13 @@
-<link rel="stylesheet" href="/includes/header.css">
+<link rel="stylesheet" href="/WebAssignment/includes/header.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <?php session_start();?>
 
 <header class = "header" id = "header">
 	<nav class = "navigation left">
-		<div class="linkImageContainer"><a href = "/mainPage/mainPage.php"><img src = "/Images/logo-white.png" alt="Home" class="icon"></a></div>
-		<div class="linkContainer"><a href = "/buildPC/chooseCase.php" class="link">Build PC</a></div>
-		<div class="linkContainer"><a href = "/Product" class="link">Products</a></div>
-		<div class="linkContainer"><a href = "/Contact" class="link">Contact Us</a></div>
+		<div class="linkImageContainer"><a href = "/WebAssignment/mainPage/mainPage.php"><img src = "/WebAssignment/Images/logo-white.png" alt="Home" class="icon"></a></div>
+		<div class="linkContainer"><a href = "/WebAssignment/buildPC/chooseCase.php" class="link">Build PC</a></div>
+		<div class="linkContainer"><a href = "/WebAssignment/Product" class="link">Products</a></div>
+		<div class="linkContainer"><a href = "/WebAssignment/Contact" class="link">Contact Us</a></div>
 	</nav>
 	
 	<nav class = "navigation right">
@@ -18,19 +18,19 @@
 			<div class = "dropDown-content" id = "dropDownAccount">
 				<?php if (isset($_SESSION['userName'])) : ?>
 					<span>Welcome, <?php echo $_SESSION['userName']; ?></span>
-					<p><a href = "/account/logout.php">Log Out</a><p>
+					<p><a href = "/WebAssignment/account/logout.php">Log Out</a><p>
 				<?php else : ?>
 					<h3>Please go login first.</h3>
-					<p><a href = "/account/index.php">Login</a><p>
+					<p><a href = "/WebAssignment/account/index.php">Login</a><p>
 				<?php endif; ?>
 			</div>
 			
 		</div>
 		
-		<script src = "/includes/dropDown.js"></script>
+		<script src = "/WebAssignment/includes/dropDown.js"></script>
 		
 		<div class = "linkContainer">
-			<a href="/Product/shoppingcart.php"><i class='bx bxs-cart'></i></a>
+			<a href="/WebAssignment/Product/shoppingcart.php"><i class='bx bxs-cart'></i></a>
 			<span id="cartQuantity">
                 <?php
 					if (isset($_SESSION['cart'])) 
