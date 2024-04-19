@@ -51,12 +51,18 @@ if (isset($_SESSION['success_message']))
             
             if (empty($errors))
             {
-                header("Location: /WebAssignment/mainPage/mainPage.php");
+                header("Location: ../mainPage/mainPage.php");
                 exit;
             }
             else
             {
                 include ('account.php');
+                echo "<script>";
+                echo "console.log(" . json_encode($password) . ");";
+                echo "console.log(" . json_encode($hashed_password_from_db) . ");";
+                echo "console.log(" . json_encode($hashed_password_from_input) . ");";
+                echo "</script>";
+
             }
         }
         else if (isset($_POST['register']))
