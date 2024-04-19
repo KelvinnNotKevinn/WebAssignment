@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 echo "<div class='item'>";
                 if (isset($item["img"])) 
 				{
-                    echo "<img src='/Images/" . $item["img"] . "'>";
+                    echo "<img src='/WebAssignment/Images/" . $item["img"] . "'>";
                 }
 				
                 echo "<div class='details'>";
@@ -152,7 +152,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         closeShoppingBtn.addEventListener('click', () => 
 		{
             // Redirect to index page
-            window.location.href = "/Product";
+            window.location.href = "/WebAssignment/Product";
         });
     </script>
 </body>

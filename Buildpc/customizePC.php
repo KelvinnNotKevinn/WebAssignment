@@ -40,10 +40,10 @@ if($_SERVER["REQUEST_METHOD"] == "GET")
 	<h2 id="caseName"><?=$name?></h2>
 	
 	<div id="caseImageContainer">
-		<img src="/Images/<?=$img?>">
+		<img src="/WebAssignment/Images/<?=$img?>">
 	</div>
 	
-    <form method="post" action="/Product/addToCart.php">
+    <form method="post" action="/WebAssignment/Product/addToCart.php">
         <div id="formContainer">
 			<input type="hidden" name="caseId" value=<?=$caseId?> >
 		

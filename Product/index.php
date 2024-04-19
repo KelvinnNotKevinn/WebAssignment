@@ -36,7 +36,7 @@ include('addToCart.php');
 			var previewContent = document.querySelector('.preview-content');
 			previewContent.innerHTML = 
 			`
-				<img src="/Images/${img}">
+				<img src="/WebAssignment/Images/${img}">
 				<h2>${name}</h2>
 				<br>
 				<p class="previewDetailsTitle">Price: </p>

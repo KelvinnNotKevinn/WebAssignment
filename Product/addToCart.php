@@ -118,6 +118,6 @@ else if ($_SERVER["REQUEST_METHOD"]==="POST")
 					'quantity' => 1
 				);
 			}
-			header("Location:/Buildpc/chooseCase.php");
+			header("Location:/WebAssignment/Buildpc/chooseCase.php");
 }
 ?>

@@ -15,13 +15,13 @@
 			echo("<div class='PCCaseContainer' id={$row['name']} >");
 			
 			echo("<div class='PCCaseImageContainer'>");
-			echo("<img class='PCCaseImage' src='/Images/".$row["img"]."'>");
+			echo("<img class='PCCaseImage' src='/WebAssignment/Images/".$row["img"]."'>");
 			echo("</div>");
 			
 			echo("<h2 class='PCcaseName'>{$row['name']}</h2>");
 			echo("<p class='PCcaseDesc'>{$row['desc']}</p>");
 			
-			echo("<p class='buildButton'><a href='/Buildpc/customizePC?caseId=$row[id]' class='buildLink'>BUILD NOW</a></p>");
+			echo("<p class='buildButton'><a href='/WebAssignment/Buildpc/customizePC?caseId=$row[id]' class='buildLink'>BUILD NOW</a></p>");
 			echo("</div>");
 		}
 		echo("</div>");
