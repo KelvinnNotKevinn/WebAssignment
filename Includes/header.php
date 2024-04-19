@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/Includes/header.css">
+<link rel="stylesheet" href="/includes/header.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <?php session_start();?>
 
@@ -7,7 +7,7 @@
 		<div class="linkImageContainer"><a href = "/mainPage/mainPage.php"><img src = "/Images/logo-white.png" alt="Home" class="icon"></a></div>
 		<div class="linkContainer"><a href = "/buildPC/chooseCase.php" class="link">Build PC</a></div>
 		<div class="linkContainer"><a href = "/Product" class="link">Products</a></div>
-		<div class="linkContainer"><a href = "/WebAssignment/Contact/" class="link">Contact Us</a></div>
+		<div class="linkContainer"><a href = "/Contact/" class="link">Contact Us</a></div>
 	</nav>
 	
 	<nav class = "navigation right">
@@ -27,7 +27,7 @@
 			
 		</div>
 		
-		<script src = "/Includes/dropDown.js"></script>
+		<script src = "/includes/dropDown.js"></script>
 		
 		<div class = "linkContainer">
 			<a href="/Product/shoppingcart.php"><i class='bx bxs-cart'></i></a>
