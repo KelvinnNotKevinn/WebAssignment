@@ -24,7 +24,7 @@
         if ($hashed_password_from_db === $hashed_password_from_input) 
         {
             $_SESSION['userName'] = $userName;
-            header("Location: /WebAssignment");
+            header("Location: ../mainPage/mainPage.php");
             exit;
         } 
         else 
