@@ -1,16 +1,6 @@
 <?php
 
-    $servername = "localhost";
-	$dbusername = "root";
-	$dbpassword = "";
-	$dbname = "web_assignment";
-
-	$conn = mysqli_connect($servername,$dbusername,$dbpassword,$dbname);
-
-	if(!$conn)
-	{
-		die("Connection failed: ".mysqli_connect_errno());
-	}
+    include('../database/connection.php');
 
 	$checkQuery = "SELECT * FROM user WHERE userName = '$newUserName'";
 	$checkResult = mysqli_query($conn, $checkQuery);

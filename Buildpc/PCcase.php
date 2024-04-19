@@ -1,6 +1,6 @@
 <?php
 
-	include("connectDatabase.php");
+	include('../database/connection.php');
 	
 	$sql = "SELECT * FROM PCcase";
 	

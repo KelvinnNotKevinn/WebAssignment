@@ -135,6 +135,16 @@
 	</div>
 		
 	</section>	
+	
+	<section id="forthSection">
+	<div id="About Us">
+		<h2 class="longSectionTitle">ABOUT US</h2>
+		<div class= "aboutUs">
+			<img src="/Images/logo-white.png">
+			<h4>Welcome to KKYB – your premier destination for PC components! We are a team of dedicated tech enthusiasts committed to providing high-quality products and excellent service to our customers. Our mission is to make PC building accessible and enjoyable for everyone.With years of experience in the industry, KKYB has established itself as a trusted source for top-notch CPUs, GPUs, motherboards, RAM, storage, and more. Our curated selection and expert guidance ensure that you can build your dream PC with confidence.</h4>
+			<h4>Whether you're a hardcore gamer, a professional creator, or a casual user, KKYB has everything you need to bring your PC build to life. Join us on our mission to unlock the full potential of PC technology with KKYB.</h4>	
+		</div>
+	</section>	
 </body>
 
 </html>

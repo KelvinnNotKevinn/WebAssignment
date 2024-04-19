@@ -1,15 +1,5 @@
 <?php
-    $servername = "localhost";
-	$dbusername = "root";
-	$dbpassword = "";
-	$dbname = "web_assignment";
-
-	$conn = mysqli_connect($servername,$dbusername,$dbpassword,$dbname);
-
-	if(!$conn)
-	{
-		die("Connection failed: ".mysqli_connect_errno());
-	}
+    include('../database/connection.php');
     
     $stmt = $conn->prepare("SELECT * FROM user WHERE username = ?");
     $stmt->bind_param("s", $userName);

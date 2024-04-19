@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+include('../database/connection.php');
 
 // check if the products table is empty
 $sql_check_empty = "SELECT COUNT(*) as count FROM products";

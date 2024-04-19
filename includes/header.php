@@ -7,7 +7,7 @@
 		<div class="linkImageContainer"><a href = "/mainPage/mainPage.php"><img src = "/Images/logo-white.png" alt="Home" class="icon"></a></div>
 		<div class="linkContainer"><a href = "/buildPC/chooseCase.php" class="link">Build PC</a></div>
 		<div class="linkContainer"><a href = "/Product" class="link">Products</a></div>
-		<div class="linkContainer"><a href = "/WebAssignment/Contact/" class="link">Contact Us</a></div>
+		<div class="linkContainer"><a href = "/Contact" class="link">Contact Us</a></div>
 	</nav>
 	
 	<nav class = "navigation right">

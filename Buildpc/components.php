@@ -1,6 +1,6 @@
 <?php
 	
-	include("connectDatabase.php");
+	include('../database/connection.php');
 	
 	$motherBoardSql = "SELECT * FROM components WHERE category = 'MOTHERBOARD'";
 	$processsorSql = "SELECT * FROM components WHERE category = 'PROCESSOR'";

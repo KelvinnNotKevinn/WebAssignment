@@ -1,3 +1,5 @@
+USE KYBBDatabase;
+
 INSERT INTO PCcase(id, name, `desc`, img) VALUES ('P001','DAYLIGHT','High-performance, sleek white build that combines power and style for any computing need','white.jpg');
 INSERT INTO PCcase(id, name, `desc`, img) VALUES ('P002','ROSELIA',"Stylish pink build that doesn't compromise on performance, perfect for those who want a standout look without sacrificing power",'pink.jpg');
 INSERT INTO PCcase(id, name, `desc`, img) VALUES ('P003','NIGHTWING',"Formidable black build, marrying sleek design with high-performance PCcase, ready to conquer any task or gaming challenge with style and power",'black.jpg');

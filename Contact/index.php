@@ -11,14 +11,7 @@
     <?php
 	include("../Includes/header.php");
 	
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "shopping";
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    include('../database/connection.php');
 
     $name = $email = $phone = $type = $description = $errorMessage = "";
     $tempName = $tempEmail = $tempPhone = "";

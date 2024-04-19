@@ -239,3 +239,12 @@ h4
 	opacity:70%;
 	transition:0.5s;
 }
+
+.aboutUs img
+{
+	display:block;
+	height:20%;
+	margin:auto;
+	margin-top:2%;
+	margin-bottom:2%;
+}

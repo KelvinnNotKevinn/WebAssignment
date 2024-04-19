@@ -20,7 +20,6 @@ include('addToCart.php');
 	<h1>Gaming Accesories</h1>
 	
 	<div class="list">
-		<?php include ('productdB.php');?>
 		<?php include ('products.php');?>
 	</div>
 		

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('config.php');
+include('../database/connection.php');
 
 // Check if the cart is empty
 if (empty($_SESSION['cart'])) 

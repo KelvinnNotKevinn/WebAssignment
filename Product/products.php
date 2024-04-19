@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+include('../database/connection.php');
 //retrieve products for shopping product lists
 $sql = "SELECT * FROM products";
 $result = $conn->query($sql);

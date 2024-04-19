@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+include('../database/connection.php');
 include ('../includes/header.php');
 
 // Check if the request method is POST

@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "shopping";
+$dbname = "KYBBDatabase";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
