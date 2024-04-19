@@ -196,3 +196,8 @@ h1
     margin-right: 10px; /* Add spacing between quantity text and input */
 }
 
+.componentList
+{
+	list-style-position: inside;
+}
+

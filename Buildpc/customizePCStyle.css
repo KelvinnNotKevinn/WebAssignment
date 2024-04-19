@@ -1,0 +1,128 @@
+body
+{
+	background-color: black;
+	font-family: sans-serif;
+}
+
+#customizePC
+{
+	width:90%;
+	margin:auto;
+	padding-top:2%;
+	padding-bottom:2%;
+	font-size: 30px;	
+	color: #CEA2FD;
+}
+
+#caseName
+{
+	font-style:italic;
+	text-decoration:underline;
+	width:90%;
+	margin:auto;
+	color: #CEA2FD;
+}
+
+#caseImageContainer
+{
+	height:50vh;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+
+#caseImageContainer img
+{
+	display:block;
+	margin:auto;
+	height:100%;
+}
+
+#formContainer
+{
+	width:90%;
+	margin:auto;
+	color:white;
+}
+
+.categoryTitle
+{
+	width:250px;
+	border: 3px solid white;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 20px 20px 0px 0px;
+	
+	background-color:#643B9F;
+}
+
+.componentList
+{
+	display:grid;
+	grid-template-columns:33.3% 33.3% 33.3%;
+	margin-bottom: 2%;
+}
+
+@media (max-width: 600px) 
+{
+    .componentList {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+}
+
+.radiobox
+{
+	width:5%;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+.selectionBox
+{
+	display:flex;
+	flex-direction: row;
+	padding:2%;
+	
+	border: 3px solid white;
+}
+
+.componentNamePrice
+{
+	padding:1%;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+.componentNamePrice h3
+{
+	height:50%;
+}
+
+.buildButton
+{
+	display:block;
+	width:100px;
+	background-color: #643B9F;
+	text-align:center;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin:auto;
+	border: 4px solid white;
+	transition:0.5s ease;
+	
+	font-size:20px;
+	color:white;
+	text-decoration: none;
+}
+
+.buildButton:hover
+{
+	opacity:70%;
+}
+
+.buildButton:active
+{
+	background-color:red;
+	opacity:100%;
+	transition:0.1s;
+}

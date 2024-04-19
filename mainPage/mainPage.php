@@ -27,42 +27,45 @@
 			<!-- Full-width images with number and caption text -->
 			<div class="showing customizePC fade">
 				<div class="customizePCImage">
-					<img src="/Images/white.jpg" style="width:100%">
+					<img src="/Images/white.jpg">
 				</div>
+				
 				<div class="customizePCDesc">
 					<h3>DAYLIGHT</h3>
 					<h4>High-performance, sleek white build that combines power and style for any computing need</h4>
 					<br>
 					<h3 class="linkToProduct">
-						<a href="#" >BUILD NOW!!!<a>
+						<a href="/Buildpc/customizePC?caseId=P001" >BUILD NOW!!!</a>
 					</h3>
 				</div>
 			</div>
 			
 			<div class="customizePC fade">
 				<div class="customizePCImage">
-					<img src="/Images/pink.jpg" style="width:100%">
+					<img src="/Images/pink.jpg">
 				</div>
+				
 				<div class="customizePCDesc">
 					<h3>ROSELIA</h3>
 					<h4>Stylish pink build that doesn't compromise on performance, perfect for those who want a standout look without sacrificing power</h4>
 					<br>
 					<h3 class="linkToProduct">
-						<a href="#" >BUILD NOW!!!<a>
+						<a href="/Buildpc/customizePC?caseId=P002" >BUILD NOW!!!</a>
 					</h3>
 				</div>
 			</div>
 			
 			<div class="customizePC fade">
 				<div class="customizePCImage">
-					<img src="/Images/black.jpg" style="width:100%">
+					<img src="/Images/black.jpg">
 				</div>
+				
 				<div class="customizePCDesc">
 					<h3>NIGHTWING</h3>
 					<h4>Formidable black build, marrying sleek design with high-performance components, ready to conquer any task or gaming challenge with style and power</h4>
 					<br>
 					<h3 class="linkToProduct">
-						<a href="#" >BUILD NOW!!!<a>
+						<a href="/Buildpc/customizePC?caseId=P003" >BUILD NOW!!!</a>
 					</h3>
 				</div>
 			</div>
@@ -72,7 +75,7 @@
 			<a class="next" onclick="plusPC(1)">&#10095;</a>
 		</div>
 		<div class="moreProducts">
-			<a href="#"><h2>View More ></h2></a>
+			<a href="/Buildpc/chooseCase.php"><h2>View More ></h2></a>
 			<br>
 		</div>
 	</div>
@@ -133,11 +136,5 @@
 		
 	</section>	
 </body>
-
-
-
-
-
-
 
 </html>

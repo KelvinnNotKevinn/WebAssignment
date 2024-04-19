@@ -85,6 +85,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     $totalPrice += $item["price"] * $item["quantity"];
                 }
 				
+				if (isset($item["components"])) 
+				{
+                    echo "<details class='componentDetails' >";
+					echo "<summary>Customize Components</summary>";
+					echo "<ul class='componentList'>";
+					echo "<li> {$item['components']['motherBoard']} </li>";
+					echo "<li> {$item['components']['processor']} </li>";
+					echo "<li> {$item['components']['ram']} </li>";
+					echo "<li> {$item['components']['gpu']} </li>";
+					echo "<li> {$item['components']['storage']} </li>";
+					echo "</ul>";
+					echo "</details>";
+					echo "<br>";
+                }
+				
                 if (isset($item["quantity"])) 
 				{
                     echo "<div class='quantity'>Quantity:  ";
@@ -137,7 +152,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         closeShoppingBtn.addEventListener('click', () => 
 		{
             // Redirect to index page
-            window.location.href = "index.php";
+            window.history.back();
         });
     </script>
 </body>

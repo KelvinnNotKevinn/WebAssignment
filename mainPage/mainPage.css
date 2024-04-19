@@ -66,9 +66,9 @@ h4
 }
 
 .customizePCContainer
-{
+{	
 	margin:auto;
-	max-width:70%; 
+	width:70%; 
 	position: relative;
 }
 
@@ -81,6 +81,7 @@ h4
 .showing
 {
 	display: flex;
+	flex-direction: row;
 }
 
 /* Next & previous buttons */
@@ -130,6 +131,11 @@ h4
 	flex:40%;
 }
 
+.customizePCImage img
+{
+	width:100%;
+}
+
 .customizePCDesc
 {
 	flex:60%;
@@ -137,6 +143,7 @@ h4
 
 .customizePCDesc h3,h4
 {
+	margin-bottom:3%;
 	max-width:90%;
 	position:relative;
 	left:5%;
