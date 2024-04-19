@@ -6,9 +6,9 @@ if($_SERVER["REQUEST_METHOD"] == "GET")
 		$caseId = $_GET["caseId"];
 		$caseInfo = "SELECT * FROM pccase WHERE id='{$caseId}'";
 		
-		include("connectDatabase.php");
+		include('../database/connection.php');
 		
-		$result = mysqli_fetch_assoc(mysqli_query($connect,$caseInfo));
+		$result = mysqli_fetch_assoc(mysqli_query($conn,$caseInfo));
 		
 		$name = $result["name"];
 		$img = $result["img"];

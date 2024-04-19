@@ -152,7 +152,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         closeShoppingBtn.addEventListener('click', () => 
 		{
             // Redirect to index page
-            window.history.back();
+            window.location.href = "/Product";
         });
     </script>
 </body>

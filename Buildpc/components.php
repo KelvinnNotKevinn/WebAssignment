@@ -8,7 +8,7 @@
 	$gpuSql = "SELECT * FROM components WHERE category = 'GPU'";
 	$storageSql = "SELECT * FROM components WHERE category = 'STORAGE'";
 
-	$motherBoard = mysqli_query($connect,$motherBoardSql);
+	$motherBoard = mysqli_query($conn,$motherBoardSql);
 	
 	if(mysqli_num_rows($motherBoard) > 0)
 	{
@@ -40,7 +40,7 @@
 		echo("</div>");
 	}
 	
-	$processor = mysqli_query($connect,$processsorSql);
+	$processor = mysqli_query($conn,$processsorSql);
 	
 	if(mysqli_num_rows($processor) > 0)
 	{
@@ -72,7 +72,7 @@
 		echo("</div>");
 	}
 
-	$ram = mysqli_query($connect,$ramSql);
+	$ram = mysqli_query($conn,$ramSql);
 	
 	if(mysqli_num_rows($ram) > 0)
 	{
@@ -104,7 +104,7 @@
 		echo("</div>");
 	}
 	
-	$gpu = mysqli_query($connect,$gpuSql);
+	$gpu = mysqli_query($conn,$gpuSql);
 	
 	if(mysqli_num_rows($gpu) > 0)
 	{
@@ -136,7 +136,7 @@
 		echo("</div>");
 	}
 	
-	$storage = mysqli_query($connect,$storageSql);
+	$storage = mysqli_query($conn,$storageSql);
 	
 	if(mysqli_num_rows($storage) > 0)
 	{

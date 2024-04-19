@@ -118,6 +118,6 @@ else if ($_SERVER["REQUEST_METHOD"]==="POST")
 					'quantity' => 1
 				);
 			}
-			header("Location:index.php");
+			header("Location:/Buildpc/chooseCase.php");
 }
 ?>

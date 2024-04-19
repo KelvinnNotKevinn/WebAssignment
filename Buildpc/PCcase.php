@@ -4,7 +4,7 @@
 	
 	$sql = "SELECT * FROM PCcase";
 	
-	$PCcase = mysqli_query($connect,$sql);
+	$PCcase = mysqli_query($conn,$sql);
 	
 	if(mysqli_num_rows($PCcase) > 0)
 	{
