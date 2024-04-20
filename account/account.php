@@ -7,10 +7,6 @@
                     <h2>Welcome! <br><span>To Our Website</span></h2>
                     <p>Come to start to build your PC.<br>KKYB, your best choice.</p>
                     <div class="social-icon">
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-instagram'></i></a>
-                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
-                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
                         <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-facebook'></i></a>
                         <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-instagram'></i></a>
                         <a href="https://youtu.be/dQw4w9WgXcQ?si=Wjozno-d3n1FDnKi"><i class='bx bxl-tiktok' ></i></a>
@@ -31,9 +27,9 @@
                     </div>
                     <div class = "input-box" id = "input-box">
                         <span class = "icon" id = "icon"><i class='bx bxs-lock'></i></span>
-                        <input id = "password" name = "password" type = "password">
+                        <input id = "userPassword" name = "userPassword" type = "password">
                         <label>Password</label>
-                        <div id="passwordError" class="error"><?= $errors['password'] ?? '' ?></div>
+                        <div id="passwordError" class="error"><?= $errors['userPassword'] ?? '' ?></div>
                     </div>
                     <div class = "checkbox">
 

@@ -25,7 +25,7 @@ if (isset($_SESSION['success_message']))
     if ($_SERVER['REQUEST_METHOD'] === 'POST')
     {
         $userName = $_POST['userName'] ?? '';
-        $password = $_POST['password'] ?? '';
+        $userPassword = $_POST['userPassword'] ?? '';
 
         $newUserName = $_POST['newUserName'] ?? '';
         $email = $_POST['email'] ?? '';
@@ -42,9 +42,9 @@ if (isset($_SESSION['success_message']))
                 $errors['userName'] = '*Invalid username';
             }
 
-            if (empty($password))
+            if (empty($userPassword))
             {
-                $errors['password'] = '*Please enter your password';
+                $errors['userPassword'] = '*Please enter your password';
             }
 
             include ('login.php');
@@ -57,12 +57,6 @@ if (isset($_SESSION['success_message']))
             else
             {
                 include ('account.php');
-                echo "<script>";
-                echo "console.log(" . json_encode($password) . ");";
-                echo "console.log(" . json_encode($hashed_password_from_db) . ");";
-                echo "console.log(" . json_encode($hashed_password_from_input) . ");";
-                echo "</script>";
-
             }
         }
         else if (isset($_POST['register']))

@@ -10,7 +10,7 @@
     {
         $user = $result->fetch_assoc();
         $hashed_password_from_db = $user['password'];
-        $hashed_password_from_input = hash('sha256', $password);
+        $hashed_password_from_input = hash('sha256', $userPassword);
         if ($hashed_password_from_db === $hashed_password_from_input) 
         {
             $_SESSION['userName'] = $userName;
@@ -19,7 +19,7 @@
         } 
         else 
         {
-            $errors['password'] = '*Password does not correct';
+            $errors['userPassword'] = '*Password does not correct';
         }
     } 
     else 
